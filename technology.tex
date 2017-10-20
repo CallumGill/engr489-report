@@ -1,0 +1,31 @@
+%% $RCSfile: using.tex,v $
+%% $Revision: 1.1 $
+%% $Date: 2010/04/23 01:57:05 $
+%% $Author: kevin $
+%%
+\chapter{Technology and Engineering Choices}
+
+Before starting development on the product I needed to decide with HAUNT the best technologies and architecture to develop our product in. This includes the API architecture, any major JavaScript libraries that would have major implications in the development and any external services that we may want to implement such as external authentication.
+This chapter will explore some of these options and explain any choices made and challenges that they may hold.
+  
+\section{API Architecture}
+The first need is to provide an API service to access and modify database as required. The major decision that needed to be made was the choice between RESTful vs SOAP. Both are come with their pros and cons and are useful in different situations.
+
+\subsection{SOAP}
+SOAP is a web access protocol has long been the standard protocol when it comes to web services for its versatility. SOAP provides a way for application to communicate over a HTTP network. It is based on XML and is used to make requests and receive responses between an application and a service.
+ADD SOME STUFF HERE
+SOAP can quickly become complex and its architecture is more suited to operations and calls to action than simple database operations however it can do both. SOAP also supports multiple expansions to enhance its capabilities the major one being WS-Security which greatly increases security options and allows the use of various security token formats such as SAML (Security Assertion Markup Language). Because of this SOAP excels in many different environments but requires more customization and research into the required extensions. SOAP also has built in retry logic and error handling.
+
+\subsection{REST - Representational State Transfer}
+RESTful web services are a way of providing an application to to communicate with a service via a set of predefined stateless operations. RESTful services in general boast less bandwidth usage and faster response times \cite{mumbaikar2013web}
+
+TODO
+%%%TODO
+
+\section{React - UI JavaScript Library}
+
+React is a JavaScript library that is used to create interactive user interfaces easily. It was originally developed by engineers within Facebook when working on their own complex user interfaces. React brings a new concepts to web development, it shifts the generally accepted workflow of web development. React solves the problem of large scale user interfaces with data changes consistently \cite{reactintro2015}.
+
+React allows you to `design simple view for each state in your application' and it will efficiently handle rendering the right components and automatically re-render the correct information and components when data changes\cite{react}. Traditionally the major problem when designing and developing a user interface is keeping it in sync with the business logic and state of the application and data \cite{staff2016react}.
+
+\section{Summary}
