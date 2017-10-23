@@ -1,13 +1,42 @@
 \chapter{Introduction}\label{C:intro}
-This project aims to develop a product that solves the problem of presenting essential information to employees in a concise, easy to read and measurable way. This project was suggested as further development of a proof of concept that HAUNT, a small web development company suggested. HAUNT acted as an industry supervisor for this project development as well as product owner. The product aims to be a micro learning management system that reduces a lot of the overhead of HR around keeping employees informed about procedures and policies within a company. This report will cover the motivations behind this product, the development and implimentation of the product, engineering choices involved and the evaluation of the product with expert feedback.
+This project aims to develop a product that solves the problem of presenting essential information to employees in a concise, easy to read and measurable way. This project was suggested as further development of a proof of concept that HAUNT, a small web development company suggested. HAUNT acted as an industry supervisor for this project development as well as product owner. The product aims to be a micro learning management system that reduces a lot of the overhead of HR around keeping employees informed about procedures and policies within a company. This report will cover the motivations behind this product, the development and implementation of the product, engineering choices involved and the evaluation of the product with expert feedback. As this product will be developed in a start-up environment this report will also cover the challenges that software development faces in these environments.
 
 \section{Haunt}
 HAUNT is a start up company that develops and maintains various websites. As they are a new company they have recently gone through the human resource management of hiring new employees and informing them of company policies, health and safety and information on the company and relevant technology. They identified the potential need for a system to easily convey and manage this information quickly and efficiently.
 
-\section{Problem and Motivation}
-The problem identified by HAUNT was the lack of a lightweight system that could be easily updated, inform users of their relevant information and present the required information in a non intrusive and intuitive manner that portrayed the important information without being overbearing.
+\section{Start-ups}
+Many start ups fail or find it difficult to develop their own products efficiently this can be effected by multiple factors, they potentially lack experience in small product development or within the target market, the market isn’t large enough to sustain the product, they have no users to establish feedback and/or validate ideas. This project will attempt to implement a process model that is effective when working in a start up environment without an established user base.
 
-This problem can be split up into two main issues, the display and organization of the information and the notifications to the user along with displaying user relevant information.
+\subsection{Difficulties within start-ups}
+As stated before start up companies often fail within their infancy. They can fail due to failures in ”execution of sales, marketing and delivery” [3] of their products. We will focus on process for product development and delivery that would be effective in a start up environment. The problematic issues of start ups and small companies when it comes to product deliveries include:
+
+\begin{itemize}
+\item Developers are inexperienced
+\item Product over fitting (product may be highly customized or targeted towards a certain user)
+\item Small/non-existent user base
+\end{itemize}
+
+These issues can be mitigated by proper planning and a well versed development process model. We will explore why some of these become issues.
+
+\subsection{Developers are inexperienced}
+This may or may not be the case in start ups as many developers come from or have some experience in product delivery management. However when dealing with smaller companies and their own products they often fall into methods and processes that harm the development of the product. This can be easily solved by ensuring the head developer of a product is highly experienced and won’t neglect important non-coding issues such as architecture, design, testing and documentation. Having a technical lead whom is experienced helps the potentially less experienced colleagues keep on track when it comes to the non-coding standards.
+
+\subsection{Product over fitting}
+When a start up company is developing a small product they have a tendency to over fit their product to a certain user. This is because they have such a small or non existent user base they only have a few sources of feedback and if they over value this feedback they may end up with a product that isn’t really suited to other users. To solve this, developers and project managers need to take any feedback that they gather from their users or themselves if they are the only test cases and make sure that it aligns with the goals of the product. Often less, better designed features are more effective than a product full of many half completed features.
+
+\subsection{Small/non-existent user base}
+Start up companies often have a limited user base or none at all. The problem with this is it increases the difficulty of gathering requirements from users and the feedback that you do receive is often from the same source. Therefore it can contribute to the over fitting problem. This is the type of environment that this project will be focusing on, the development of a product in an environment with little to no established user base.
+
+\subsection{Summary}
+To try and mitigate these issues we needed to implement a development model that helps reduce these potential problems. We needed to ensure that we have a proper authority structure, we have a process for requirement gathering and that we focus on the products goals to try and reduce over fitting to a certain user, including Haunt.
+
+\section{Problem and Motivation}
+The problem identified by HAUNT was the lack of a lightweight system that could be easily updated, inform users of their relevant information and present the required information in a non intrusive and intuitive manner that portrayed the important information without being overbearing. While there are some current solutions for information management systems and learning management systems, neither solve the issue of being too information dense and hard to update appropriately for a small HR team.
+
+The main problem can be split up into two issues, the display, organization and management of the information and the notifications to the user along with displaying user relevant information. These issues is what this product tries to solve.
 
 \section{Available Solutions}
-There are two potential types of product that partially solve the issues identified. These are learning management tools (LMS) and wikis. However these solutions are only partial solutions to the problem and are aimed at solving different but similar issues.
+As stated previously, there are two potential types of product that partially solve the issues identified. These are learning management tools (LMS) and knowledge management systems (KMS). However these solutions are only partial solutions to the problem and are aimed at solving different but similar issues. This report explores these current solutions and identifies the components that work well and the areas that they are lacking.
+
+\section{Solution}
+The suggested solution is a micro learning management system which address the need for a more lightweight knowledge management system that is easy to update and organize. It solves some of the issues that the current solutions involve such as user targeted information, a more lightweight display of information and an ease of updating information and informing users.

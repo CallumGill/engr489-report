@@ -14,6 +14,13 @@
 
 \usepackage{url} % for typesetting urls
 
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+
+\graphicspath{ {images/} }
+
+
 %
 %  We don't want figures to float so we define
 %
@@ -23,7 +30,7 @@
 %% These are standard LaTeX definitions for the document
 %%                            
 \title{FACT - A Micro Learning Management Tool}
-\author{The Author}
+\author{Callum Gill}
 
 %% This file can be used for creating a wide range of reports
 %%  across various Schools
@@ -42,12 +49,12 @@
 \usepackage[image,ecs,mcompsci]{vuwproject}
 
 % You should specifiy your supervisor here with
-%     \supervisor{Firstname Lastname}
+\supervisor{Alex Potanin}
 % use \supervisors if there is more than one supervisor
 
 % Unless you've used the bschonscomp or mcompsci
 %  options above use
-%   \otherdegree{OTHER DEGREE OR DIPLOMA NAME}
+\otherdegree{Bachelor of Engineering with Honours}
 % here to specify degree
 
 % Comment this out if you want the date printed.
@@ -87,9 +94,14 @@ A short description of the project goes here.
 
 % individual chapters included here
 \include{introduction}
-\include{technology}
+\include{currentSolutions}
 \include{product}
+\include{technology}
+\include{methodologies}
 \include{implimentation}
+\include{feedback}
+\include{comparison}
+\include{conclusion}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,6 +114,7 @@ A short description of the project goes here.
 %\bibliographystyle{ieeetr}
 \bibliographystyle{acm}
 \bibliography{sample}
+\include{appendices}
 
 
 \end{document}
